@@ -31,6 +31,27 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link rel="icon" href="./dist/images/rocket.png" type="image/x-icon" />
     <link rel="shortcut icon" href="./dist/images/idea.png" type="image/x-icon" />
+
+    <style>
+        .rotate-image {
+          transition: transform 1s;
+          transform: rotate(360deg);
+          animation: rotation 1s ease-in-out forwards;
+        }
+  
+        @keyframes rotation {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(720deg);
+          }
+        }
+        video {
+    display: block;
+    margin: 0 auto;
+  }
+      </style>
     
 </head>
 
@@ -61,18 +82,12 @@
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Non sei stanco di cercare?</h1>
-	                        <p class="hero-paragraph">Anche io come te prima di comprare un prodotto voglio essere sicuro che ne valga davvero la pena, soprattutto se il costo non è indifferente.<br> 
-                                Cercare è divertente e si imparano un sacco di cose ma ne vale sempre la pena?<br> 
-                               <!--  Spesso passiamo interi periodi a cercare in lungo e in largo pensando che ci possa essere sfuggita qualche caratteristica riguardo al prodotto che vogliamo.<br> 
-                                I siti online sembrano consigliare tutti cose differenti, sembra tutto un po' confuso quando si parla di prodotti tecnologici se non ne capisci al 100%.<br> 
-                                Ecco perchè abbiamo ideato Consulens!<br> 
-                                Un servizio su misura per te che stai cercando il prodotto ideale che possa combinare: qualità, durevolezza, tempi di consegna ad un prezzo ovviamente che rientra nel tuo budget.<br> 
-                                Noi siamo qui per questo, per facilitarti la vita, farti risparmiare tempo e soprattutto per spiegarti quale acquisto ti conviene di più per l'utilizzo che ne vuoi fare!-->
-                                
-                            </p>
-	                        <div class="hero-cta"><a class="button button-primary" href="preorder.html">Inizia ora!</a>  
-                                <a class="button" href="#">Voglio essere ricontattato </a></div>
+	                        <h1 class="hero-title mt-0">Come mai Economico?</h1>
+	                        <p class="hero-paragraph"> Consulens® è per tutti, il prezzo è accessibile ad ogni età e ad ogni tasca proprio perchè sappiamo quanto sia già una grossa spesa comprare il prodotto che desideri tanto e non vogliamo alleggerire le tue tasche.
+                             </p>
+                                <br> 
+	                        <div class="hero-cta"><a class="button button-primary" href="preorder.html">Mi hai convinto</a>  
+                                </div>
 						</div>
 						<div class="hero-figure anime-element">
 							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
@@ -80,14 +95,10 @@
 							</svg>
 							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
 							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
-							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
 							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
 							<div class="hero-figure-box hero-figure-box-05"></div>
 							<div class="hero-figure-box hero-figure-box-06"></div>
 							<div class="hero-figure-box hero-figure-box-07"></div>
-							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
-							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
-							<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
 						</div>
                     </div>
                 </div>
@@ -99,62 +110,12 @@
                         <div class="features-wrap">
                             <div class="feature text-center is-revealing">
                                 <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="./dist/images/dollar.png" height="80" width="80" alt="Economico">
-                                    </div>
-                                    <h4 class="feature-title mt-24">ECONOMICO</h4>
-                                    <p class="text-sm mb-0">Consulens® è per tutti, il prezzo è accessibile ad ogni età e ad ogni tasca proprio perchè sappiamo quanto sia già una grossa spesa comprare il prodotto che desideri tanto e non vogliamo alleggerire le tue tasche.</p>
-                                    <br> <a class="button button-third" href="index copy.html">Come mai Economico?</a> 
-                                </div>
-                            </div>
-							<div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="./dist/images/trust.png" height="80" width="80" alt="Feature 02">
-                                    </div>
-                                    <h4 class="feature-title mt-24">AFFIDABILE</h4>
-                                    <p class="text-sm mb-0">Consulens® siamo Io e Daniele, due ingegneri informatici che hanno sviluppato un software homemade che è in grado di garantirti una consulenza reale con dati, caratteristiche, usabilità, recensioni e prezzi messi a confronto in poche ore.</p>
-                                    <br> <a class="button button-primary" href="preorder.html">Come mai Affidabile?</a> 
-                                </div>
-                            </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="./dist/images/fast-delivery.png" height="80" width="80" alt="Feature 03">
-                                    </div>
-                                    <h4 class="feature-title mt-24">VELOCE</h4>
-                                    <p class="text-sm mb-0"> In meno di 24h dopo aver supervisionato il risultato del nostro software e aver stilato una lista dei 5 prodotti migliori per il tuo budget riceverai una mail con allegata una presentazione completamente personalizzata.</p>
-                                    <br> <a class="button button-primary" href="preorder.html">Come mai Veloce?</a> 
-                                </div>
-                            </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="./dist/images/360.png" height="80" width="80" alt="Feature 04">
-                                    </div>
-                                    <h4 class="feature-title mt-24">COMPLETO</h4>
-                                    <p class="text-sm mb-0">Consulens® non si fa scappare niente! Tutte le informazioni che esistono su internet riguardo i prodotti in commercio in tutto il mondo sono pane per il nostro software e non si farà scappare nulla. Al giorno d'oggi se qualcosa esiste è anche su internet! </p>
-                                    <br> <a class="button button-primary" href="preorder.html">Come mai Completo?</a> 
-                                </div>
-                            </div>
-							<div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="./dist/images/easy.png" height="80" width="80" alt="Feature 05">
-                                    </div>
-                                    <h4 class="feature-title mt-24">FACILE</h4>
-                                    <p class="text-sm mb-0">Consulens® è semplice, ti basta inserire pochi dati riguardo i prodotti che hai in mente o le caratteristiche che vorresti nel tuo prodotto ideale ed aspettare!</p>
-                                    <br> <a class="button button-primary" href="preorder.html">Come mai Facile?</a> 
-                                </div>
-                            </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="./dist/images/shield.png" height="80" width="80" alt="Feature 06">
-                                    </div>
-                                    <h4 class="feature-title mt-24">GARANTITO</h4>
-                                    <p class="text-sm mb-0">Consulens® è una garanzia, il nostro software è in grado di analizzare centinaia di Gigabytes al secondo. Non ci sfugge niente!</p>
-                                    <br> <a class="button button-primary" href="preorder.html">Come mai Garantito?</a> 
+                                    <div class="features-wrap">
+                                        <video width="640" height="150" autoplay controls>
+                                          <source src="./dist/images/Economico.mp4" type="video/mp4">
+                                          Il tuo browser non supporta il tag video.
+                                        </video>
+                                      </div>
                                 </div>
                             </div>
                         </div>
@@ -179,21 +140,21 @@
 										<div class="pricing-table-features-title text-xs pt-24 pb-24">Cosa ricevi:</div>
                                         <ul class="pricing-table-features list-reset text-xs">
                                             <li>
-                                                <span>Risultato analisi di mercato</span>
+                                                <span>Analisi di mercato completa</span>
                                             </li>
                                             <li>
-                                                <span>Una presentazione completa</span>
+                                                <span>Presentazione da rivedere quando vuoi</span>
                                             </li>
                                             <li>
-                                                <span>Seconda opzione di acquisto</span>
+                                                <span>Migliori siti su cui acquistare</span>
                                             </li>
 											<li>
-												<span>Migliori siti su cui acquistarlo</span>
+												<span>Migliore periodo in cui acquistare il tuo prodotto</span>
 											</li>
                                         </ul>
                                     </div>
                                     <div class="pricing-table-cta mb-8">
-                                        <a class="button button-primary button-shadow button-block" href="#">Inizia ora!</a>
+                                        <a class="button button-primary button-shadow button-block" href="preorder.html">Voglio iniziare ora!</a>
                                     </div>
                                 </div>
                             </div>
