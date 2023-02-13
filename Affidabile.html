@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="features section">
                 <div class="container">
                   <div class="features-inner section-inner has-bottom-divider">
@@ -94,34 +94,7 @@
                   </div>
                 </div>
               </section>
-              
-              <script>
-                // Funzione per rilevare la visibilità dell'elemento
-                function isElementInViewport(el) {
-                  var rect = el.getBoundingClientRect();
-                  return (
-                    rect.top >= 0 &&
-                    rect.left >= 0 &&
-                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                  );
-                }
-              
-                // Seleziona l'elemento da tracciare
-                var myElement = document.querySelector("#Affidabile");
-              
-                // Ascolta l'evento onended del video
-                myElement.addEventListener("ended", function() {
-                  if (isElementInViewport(myElement)) {
-                    // Scatena un evento nel momento in cui il video è stato visualizzato per intero
-                    dataLayer.push({
-                      event: "video_completed",
-                      videoId: myElement.id
-                    });
-                  }
-                });
-              </script>
-              
+                                        
             <section class="pricing section">
                 <div class="container-sm">
                     <div class="pricing-inner section-inner">
